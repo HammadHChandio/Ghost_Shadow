@@ -13,6 +13,10 @@ Vagrant.configure("2") do |config|
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://atlas.hashicorp.com/search.
   config.vm.box = "precise32"
+  config.vm.hostname = "Hammad-dev"
+  config.vm.provision "shell", path: "provision.sh"
+  
+  
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
