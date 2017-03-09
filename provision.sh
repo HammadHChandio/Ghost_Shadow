@@ -10,3 +10,6 @@ apt-get -y install nginx
 #starting nginx service 
 service nginx start
 
+
+
+
